@@ -36,7 +36,7 @@ bool OneAway(string str1, string str2){
 	}
 	/*cout << sctr << endl;
 	cout << ctr << endl;*/
-	if(sctr == 1 || ctr - 1 == size || ctr + 1 == size){
+	if(sctr <= 1 || ctr - 1 == size || ctr + 1 == size){
 		return true;
 	}
 	return false;
@@ -44,7 +44,7 @@ bool OneAway(string str1, string str2){
 
 int main(){
 	string str1 = "pale";
-	string str2 = "bake";
+	string str2 = "sales";
 	if(OneAway(str1, str2)){
 		cout << "true" << endl;
 	} else{
