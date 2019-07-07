@@ -7,16 +7,15 @@
 
 #include <iostream>
 #include <string>
-#include <cstdlib>
-#include <math.h>
 
 using namespace std;
 
 bool OneAway(string str1, string str2){
-	if(fabs(str1.length() - str2.length()) > 1){
+	int size = (str1.length() > str2.length()) ? str1.length() : str2.length();
+	int small = (str1.length() < str2.length()) ? str1.length() : str2.length();
+	if(size - small > 1){
 		return false;
 	}
-	int size = (str1.length() > str2.length()) ? str1.length() : str2.length();
 	int ctr = 0;
 	//check insertion and deletion
 	for(int i = 0; i < size; i++){
@@ -44,7 +43,7 @@ bool OneAway(string str1, string str2){
 
 int main(){
 	string str1 = "pale";
-	string str2 = "sales";
+	string str2 = "bake";
 	if(OneAway(str1, str2)){
 		cout << "true" << endl;
 	} else{
