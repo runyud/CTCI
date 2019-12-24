@@ -4,7 +4,10 @@
 //  1.6 String Compression
 //
 //
+#include <iostream>
+#include <string>
 
+using namespace std;
 
 
 string strCompress(string str){
