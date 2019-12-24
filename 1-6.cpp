@@ -1,14 +1,11 @@
 //
 //
 //  CTCI questions
-//  1.5 String Compression
+//  1.6 String Compression
 //
 //
 
-#include <iostream>
-#include <string>
 
-using namespace std;
 
 string strCompress(string str){
 	string result;

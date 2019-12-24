@@ -43,7 +43,7 @@ bool OneAway(string str1, string str2){
 
 int main(){
 	string str1 = "pale";
-	string str2 = "bake";
+	string str2 = "paole";
 	if(OneAway(str1, str2)){
 		cout << "true" << endl;
 	} else{

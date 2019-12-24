@@ -37,7 +37,7 @@ bool PalinPerm(string str){
 }
 
 int main(){
-	if(PalinPerm("Tact Coa")){
+	if(PalinPerm("Aba cbc")){
 		cout << "true " << endl;
 	} else{
 		cout << "false " << endl;
